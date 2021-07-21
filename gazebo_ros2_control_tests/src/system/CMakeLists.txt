@@ -1,0 +1,8 @@
+ament_add_test(test_position_controller
+  GENERATE_RESULT_FOR_RETURN_CODE_ZERO
+  COMMAND "${CMAKE_CURRENT_SOURCE_DIR}/test_position_controller.py"
+  WORKING_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
+  TIMEOUT 20
+  ENV
+    TEST_DIR=${CMAKE_CURRENT_SOURCE_DIR}
+)
